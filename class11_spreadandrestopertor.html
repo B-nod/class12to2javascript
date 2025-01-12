@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread and rest operator</title>
+</head>
+<body>
+    <script>
+        // spread operator
+        let p_langauage = ['python', 'javascript', 'golang', 'java']
+        let m_language = ['HTML', 'CSS']
+        let new_langauge = [...p_langauage, ...m_language]
+        console.log(new_langauge)
+
+        // rest operator
+        const[subject1, subject2,...subject] = new_langauge
+        console.log(subject1)
+        console.log(subject2)
+        console.log(subject)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+</head>
+<body>
+    <script>
+        let text = 'We are reading javascript class. Javascript, javascript is used in react and javascript is also use in angular'
+        document.write(`${text} <br>`)
+        document.write(`${text.length} <br>`)
+
+        // to access string each character, we use indexing. Index always start with 0
+        document.write(`${text[4]} <br>`)
+        //toLowerCase()
+        document.write(`${text.toLowerCase()} <br>`)
+         //toUpperCase()
+         document.write(`${text.toUpperCase()} <br>`)
+         //indexOf()
+         document.write(`${text.indexOf('javascript')} <br>`)
+         // lastIndexOf()
+         document.write(`${text.lastIndexOf('javascript')} <br>`)
+         // slice(start_point, end_point)
+         document.write(`${text.slice(5,30)} <br>`)
+         // split()
+        //  document.write(`${text.split('javascript')} <br>`)
+         //includes()
+         document.write(`${text.includes('javascript')} <br>`)
+         // replace()
+         document.write(`${text.replace('javascript', 'js')} <br>`)
+         // replaceAll()
+         document.write(`${text.replaceAll('javascript', 'js')} <br>`)
+         // trim()
+         let demo = '     hello   '
+         console.log(demo)
+         console.log(`${demo.trim()}`)
+
+    </script>
+</body>
+</html>

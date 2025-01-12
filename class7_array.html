@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+    <style></style>
+</head>
+<body>
+    <script>
+        // array => collection of element
+        p_langauage = ['javascript', 'php', 'python', 'java']
+        document.write(`${p_langauage} <br>`)  
+        document.write(`${p_langauage.length} <br>`)
+        len = p_langauage.length
+        // to access element through indexing
+        document.write(`${p_langauage[len-1]} <br>`)
+        document.write(`${p_langauage[0]} <br>`)
+        // to add data from end => push()
+        p_langauage.push('Ruby')
+        document.write(`${p_langauage} <br>`)
+        // to remove data from end => pop()
+        p_langauage.pop()
+        document.write(`${p_langauage} <br>`)
+        // to add data from start => unshift
+        p_langauage.unshift('Go lang')
+        document.write(`${p_langauage} <br>`)
+        // to remove data from start => shift
+        p_langauage.shift()
+        document.write(`${p_langauage} <br>`)
+        // splice
+        p_langauage.splice(3,0,'ruby on rail', 'go lang')
+        document.write(`${p_langauage} <br>`)
+        // sort()
+        document.write(`${p_langauage.sort()} <br>`)
+        // reverse()
+        document.write(`${p_langauage.reverse()} <br>`)
+        // concat() => to mix two array in one
+        m_language = ['HTML', 'CSS']
+        document.write(`${p_langauage.concat(m_language)}`)
+
+
+
+    </script>
+    
+</body>
+</html>

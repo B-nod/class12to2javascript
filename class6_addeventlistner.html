@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add event listner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto w-[500px] h-[250px] mt-10 relative">
+        <img id="img" src="img/latop1.jpg" alt="laptop" class="w-full h-full shadow-md">
+        <button id="pre" class="left absolute top-[40%] left-5 text-3xl bg-blue-500 text-white w-10 h-10 rounded-full pb-3 pr-1">&lt;</button>
+        <button id="next" class="right  absolute top-[40%] right-5 text-3xl bg-blue-500 text-white w-10 h-10 rounded-full pb-3 pr-1">&gt;</button>
+    </div>
+
+    <script>
+        let pre_btn = document.getElementById('pre')
+        let next_btn = document.getElementById('next')
+        let image = document.getElementById('img')
+        // implementing event through javascript
+        // const demo =()=>{
+        //     image.src = `img/latop1.jpg`
+        // }
+        const next =()=>{
+            image.src = `img/laptop2.jpg`
+        }
+        // pre_btn.addEventListener('click', demo)
+        pre_btn.addEventListener('click', ()=>{
+            image.src = `img/latop1.jpg`
+        })
+
+        next_btn.addEventListener('click', next) // callback function
+
+    </script>
+    
+</body>
+</html>

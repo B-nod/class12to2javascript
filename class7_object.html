@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>college</th>
+        </tr>
+        <tr>
+            <td id="tname"></td>
+            <td id="taddress"></td>
+            <td id="tcollege"></td>
+        </tr>
+    </table>
+    <script>
+        const students = {
+            name:'Ram Shrestha',
+            address:'kTM',
+            college:'Dursikshya'
+        }
+        document.getElementById('tname').innerHTML = `${students['name']}`
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+</head>
+<body>
+    <script>
+        // conditional statemnt 
+        // to excute the code first condition is checked if condition is true if statement code is excute if condition is false else statemnt code is excute
+        // if statement => if there is only one condition
+        // if else statement => if there is only one condition and also run other code when condition is false
+        // else if statement => if there is multiple condition
+        // nested if else statement => if else condition statement inside if else condition statement
+        // syntax
+        // if(){
+        //   ... if condition is true, it excutes this line of code  
+        // } 
+        // else{
+        //     ... if condition is false, it excutes this line of code  
+        // }
+
+        let x = Number(prompt("Enter a number : "))  // converting into number
+        // if else example
+        // if(x>=0){
+        //     document.write(`${x} is a positive number`)
+        // }else{
+        //     document.write(`${x} is a negative number`)
+        // }
+
+        // else if example
+        // if(x>0){
+        //     document.write(`${x} is a positive number`)
+        // }
+        //  else if(x==0){
+        //     document.write(`number is equal to zero`)
+        // }
+        // else{
+        //     document.write(`${x} is a negative number`)
+        // }
+
+        // nested if else example
+         if(x>=0){
+
+             if(x==0){
+                document.write(`it is equal to zero`)
+             }
+             else{
+                document.write(`${x} is a positive number `)
+             }     
+        }
+        else{
+            document.write(`${x} is a negative number`)
+        }
+
+
+
+        
+    </script>
+</body>
+</html>

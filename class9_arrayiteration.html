@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array iteration</title>
+</head>
+<body>
+    <script>
+        
+     // forEach
+     let number = [1,2,3,4,5,6]
+    number.forEach((x)=>{
+        document.write(`${x**2} &nbsp;`)
+     })
+    document.write(`<br>`)
+     // map
+    let hello = number.map((x)=>{
+        return `${x**2} &nbsp;`
+     })
+
+     document.write(hello, '<br>')
+
+    
+
+     // filter
+     let price = [1,1,1,1,1]
+     let filter_object =price.filter(x=>x>3000)
+     document.write(filter_object, "<br>")
+
+     // reduce
+    let reduce_variable = price.reduce((ac, c)=>ac+c)
+    document.write(reduce_variable, "<br>")
+
+    // some()
+    //every()
+    let num = [200,300,400,500]
+    let every_num = num.every(y=>{
+        return y>300
+    })
+    document.write(every_num, "<br>")
+  // some
+    let some_num = num.some(y=>{
+        return y>300
+    })
+    document.write(some_num,'<br>')
+    
+     
+
+    </script>
+</body>
+</html>

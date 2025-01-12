@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator</title>
+</head>
+<body>
+    <script>
+        // operators are symbol which is used to perform operation
+        // Types of operator
+        // 1. assignment operator
+        // 2. arthemetic operator
+        // 3. comparision operator
+        // 4. logical operator
+        // 5. bitwise operator
+
+        // arthemetic operator
+        // +(addition), -(substract), *(multiple), /(divide), %(modulus=> remainder), **(power)
+        let x = 10
+        let y = 20
+        // document.write("Addition of ", x , " and ", y, "is", x+y)
+        document.write(`Addition of ${x} and ${y} is ${x+y} <br>`)
+        document.write(`Substract of ${x} and ${y} is ${x-y} <br>`)
+        document.write(`Multiple of ${x} and ${y} is ${x*y} <br>`)
+        document.write(`Division of ${x} and ${y} is ${x/y} <br>`)
+        document.write(`Remainder of ${x} and ${y} is ${x%y} <br>`)
+        document.write(`Power of ${x} and ${y} is ${x**y} <br>`)
+
+        // assignment operator
+        // += => x+=y => x= x+y
+        // -= => x-=y => x= x-y
+        // *= => x*=y => x= x*y
+        // /= => x/=y => x= x/y
+        // %= => x%=y => x= x%y
+        // **= => x**=y => x= x**y
+        let a = 2
+        let b = 3
+        a*=b
+        document.write(`The new value of a after assignment operator is ${a} <br>`)
+
+        // comparision operator
+        // ==(equal to), 
+        // ===(strickly equal to), 
+        // !=(not equal to),
+        // !==(not strickly equal to ),
+        // < (lower than)
+        // > (greater than)
+        // <= (lower than and equal to)
+        // >= (greater than and equal to)
+
+        let num1 = 10
+        let num2 = 10
+        document.write(num1==num2, "<br>")
+        document.write(num1!=num2, "<br>")
+        document.write(num1<=num2, "<br>")
+        document.write(num1>=num2, "<br>")
+        document.write(num1<num2, "<br>")
+        document.write(num1>num2, "<br>")
+        document.write(num1===num2, "<br>")
+        document.write(num1!==num2, "<br>")
+
+
+        // logical operator
+        // && (and operator)
+        // || (or operator),
+        // ! (not operator)
+        // and operator working machanism
+        // true && true = true
+        // true && false = false
+        // false && true = false
+        // false && false = false
+        document.write(` <h1>and operator working machanism</h1> <br>`)
+        // document.write(num1==num2, "<br>")
+        // document.write(num1!=num2, "<br>")
+        // using and operator
+        document.write(num1==num2 && num1==num2 && num1==num2 , "<br>")
+
+         // or operator working machanism
+        // true || true = true
+        // true || false = true
+        // false || true = true
+        // false || false = false
+        document.write(` <h1>or operator working machanism</h1> <br>`)
+        // document.write(num1==num2, "<br>")
+        // document.write(num1!=num2, "<br>")
+        // using and operator
+        document.write(num1==num2 || num1==num2 || num1==num2 , "<br>")
+
+        // not operator working machanism
+        // !(true) = false
+        // !(false) = true
+        
+        document.write(` <h1>not operator working machanism</h1> <br>`)
+        // document.write(num1==num2, "<br>")
+        // document.write(num1!=num2, "<br>")
+        // using and operator
+        document.write(!(num1==num2 || num1==num2 || num1==num2) , "<br>")
+        
+
+
+      
+    </script>
+</body>
+</html>

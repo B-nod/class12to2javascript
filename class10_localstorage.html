@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage</title>
+</head>
+<body>
+    <button id="remove">remove</button>
+    <script>
+        localStorage.setItem('data', 'Hello we are learning javascript')
+        const our_data = localStorage.getItem('data')
+        console.log(our_data)
+        document.getElementById('remove').addEventListener('click', ()=>{
+            localStorage.removeItem('data')
+        })
+
+        // JSON => Javascript object notation
+
+        const student = {
+            "name":"ram shrestha",
+            "address":"Jamal",
+            "subject":"web development"
+        }
+        localStorage.setItem('student', JSON.stringify(student)) // stringify => to convert json into 
+        const student_data = JSON.parse(localStorage.getItem('student'))
+        console.log(student_data['name'])
+    </script>
+</body>
+</html>
